@@ -10,4 +10,4 @@ User can:
 - display all books
 - change book status (given or present)
 
-The data is stored in json format. Only standart Python libraries are used
+The data is stored in json format. Only standard Python libraries are used
