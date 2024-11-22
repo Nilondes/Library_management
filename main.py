@@ -1,7 +1,4 @@
-import json, unittest
-
-
-test_case = [{"id": 1, "title": "test title", "author": "Test Author", "year": "1986", "status": "present"}]
+import json
 
 
 def list_books() -> list:
@@ -12,7 +9,7 @@ def list_books() -> list:
 
 def add_book(title, author, year) -> None:
     books = list_books()
-    last_id = books[len(books) - 1]["id"]
+    last_id = 0 if len(books) == 0 else books[len(books) - 1]["id"]
     data = {"id": last_id + 1, "title": title, "author": author, "year": year, "status": "present"}
     books.append(data)
     with open('data.json', 'w') as file:
