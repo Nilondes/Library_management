@@ -1,5 +1,5 @@
 import unittest
-from main import list_books, add_book, remove_book, change_status, search_book
+from functions import list_books, add_book, remove_book, change_status, search_book
 
 
 class TestLibrary(unittest.TestCase):
